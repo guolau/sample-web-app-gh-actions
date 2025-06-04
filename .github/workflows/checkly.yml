@@ -1,8 +1,8 @@
 name: 'checkly'
 
 on:
-  # push: 
-    # branches: [ $default_branch ]
+  push: 
+    branches: [ $default_branch ]
   pull_request:
 
 env: 
