@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <HelloWorld msg="Test web app this is a test" />
+  <HelloWorld msg="Test web app this is a test with GitHub Actions" />
 </template>
 
 <style scoped>
