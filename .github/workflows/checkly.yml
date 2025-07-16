@@ -1,4 +1,4 @@
-name: 'checkly-new'
+name: 'checkly'
 on: [deployment_status]
 
 # Set the necessary credentials and export variables we can use to instrument our test run. Use the ENVIRONMENT_URL
