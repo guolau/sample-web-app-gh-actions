@@ -16,6 +16,16 @@ const config = defineConfig({
       testMatch: '**/tests/*.spec.ts',
       tags: ['browser'],
     },
+    playwrightConfigPath: './playwright.config.ts',
+    playwrightChecks: [
+      {
+        name: 'PW check suite - GH actions',
+        logicalId: 'pwcs-gha',
+        // Select the tests defined in
+        // the `environment-marketing` Playwright project
+        pwProjects: ['chromium'],
+      },
+    ]
   },
   cli: {
     runLocation: 'us-east-1',
