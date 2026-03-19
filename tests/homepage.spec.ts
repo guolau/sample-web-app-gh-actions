@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test')
+import { expect, test } from '@playwright/test'
 
 test.use({ actionTimeout: 10000 })
 
