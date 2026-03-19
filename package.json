@@ -13,7 +13,7 @@
   "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@vitejs/plugin-vue": "^5.2.1",
-    "checkly": "^7.0.1",
+    "checkly": "^7.7.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "vite": "^6.2.1"
