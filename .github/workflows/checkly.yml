@@ -38,7 +38,7 @@ jobs:
         run: npx checkly test -e ENVIRONMENT_URL=${{ env.ENVIRONMENT_URL }} --reporter=github --record
       - name: Trigger checks # run the checks passing in the ENVIRONMENT_URL and recording a test session.
         id: trigger-checks
-        run: npx checkly trigger -t  -e ENVIRONMENT_URL=${{ env.ENVIRONMENT_URL }} --reporter=github --record
+        run: npx checkly trigger -t dashboard -e ENVIRONMENT_URL=${{ env.ENVIRONMENT_URL }} --reporter=github --record
       - name: Create summary # export the markdown report to the job summary.
         id: create-summary
         run: cat checkly-github-report.md > $GITHUB_STEP_SUMMARY
